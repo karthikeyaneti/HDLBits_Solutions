@@ -1,7 +1,7 @@
 module top_module (
     input clk,
     input [7:0] in,
-    output [7:0] anyedge
+    output reg [7:0] anyedge
 );
 	integer i;
     reg [7:0] temp;
