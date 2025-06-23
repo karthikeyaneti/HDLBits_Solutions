@@ -44,7 +44,7 @@ module top_module(
         if(reset) 
             out <= 8'b0;
         else if(state == DATA && count >= 4'd1 && count <= 4'd8)
-            out[count-1] <= in;
+            out <= {in,out[7:1]};
     end
 
 	assign done = (state == DONE);
