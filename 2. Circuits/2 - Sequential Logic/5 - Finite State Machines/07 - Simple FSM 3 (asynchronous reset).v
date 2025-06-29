@@ -4,7 +4,7 @@ module top_module(
     input areset,
     output out); //
 
-    parameter A = 2'd0, B = 2'd1, C = 2'd2, D = 2'd3;
+    localparam A = 2'd0, B = 2'd1, C = 2'd2, D = 2'd3;
     reg [1:0] state, next_state;
     
     // State transition logic

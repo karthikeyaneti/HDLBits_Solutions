@@ -4,7 +4,7 @@ module top_module(
     input reset,    // Synchronous reset
     output done); //
 
-    parameter B1 = 2'd1, B2 = 2'd2, B3 = 2'd3, DONE = 2'd0; 
+    localparam B1 = 2'd1, B2 = 2'd2, B3 = 2'd3, DONE = 2'd0; 
     reg [1:0] state, next;
     
     // State transition logic (combinational)

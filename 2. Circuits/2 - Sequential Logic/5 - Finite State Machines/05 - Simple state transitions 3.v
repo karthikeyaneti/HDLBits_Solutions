@@ -4,7 +4,7 @@ module top_module(
     output [1:0] next_state,
     output out); //
 
-    parameter A = 2'd0, B = 2'd1, C = 2'd2, D = 2'd3;
+    localparam A = 2'd0, B = 2'd1, C = 2'd2, D = 2'd3;
 
     // State transition logic: next_state = f(state, in)
     always @(*) begin

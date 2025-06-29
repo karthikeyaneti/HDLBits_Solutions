@@ -8,7 +8,7 @@ module top_module(
     output walk_right,
     output aaah ); 
     
-    parameter LEFT = 2'b00, RIGHT = 2'b01, FALL_LEFT = 2'b10, FALL_RIGHT = 2'b11;
+    localparam LEFT = 2'b00, RIGHT = 2'b01, FALL_LEFT = 2'b10, FALL_RIGHT = 2'b11;
     reg [1:0] state, next;
     
     always @(*) begin

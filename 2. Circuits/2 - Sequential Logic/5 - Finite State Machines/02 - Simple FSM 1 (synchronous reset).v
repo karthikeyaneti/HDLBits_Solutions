@@ -6,7 +6,7 @@ module top_module(clk, reset, in, out);
     output out;
 
     // Fill in state name declarations
-    parameter A = 1'b0, B = 1'b1;
+    localparam A = 1'b0, B = 1'b1;
 
     reg present_state, next_state;
 

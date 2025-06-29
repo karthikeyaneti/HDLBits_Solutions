@@ -3,37 +3,42 @@ module top_module(
     input in,
     input reset,    // Synchronous reset
     output done
-); //
+); 
     
-    parameter IDLE = 2'd0, DATA = 2'd1, STOP = 2'd2, DONE = 2'd3;
-  	reg [1:0] state, next;
-  	reg [3:0] count;
+    localparam	STRT = 3'd0,
+    			DATA = 3'd1,
+    			STOP = 3'd2,
+    			WAIT = 3'd3,
+    			DONE = 3'd4;
+    
+  	reg [2:0] 	state, next;
+    reg [3:0] 	count;
     
     always @(*) begin
         case(state)
-          IDLE: next = (in) ? IDLE : DATA;
-          DATA: next = (count == 4'd9) ? (in) ? DONE : STOP : DATA;
-          STOP: next = (in) ? IDLE : STOP;
-          DONE: next = (in) ? IDLE : DATA;
-          default: next = IDLE;
+            STRT: next = (in) ? STRT : DATA;
+            DATA: next = (count == 4'd7) ? STOP : DATA;
+            STOP: next = (in) ? DONE : WAIT;
+            WAIT: next = (in) ? STRT : WAIT;
+            DONE: next = (in) ? STRT : DATA;
+            default: next = STRT;
         endcase
     end
     
     always @(posedge clk) begin
         if(reset) begin
-            state <= IDLE;
+            state <= STRT;
             count <= 4'd0;
-        end else begin
-            if(next == DATA) begin
-                state <= next;
-                count <= count + 1'b1;
-            end else begin
-                state <= next;
+        end
+        else begin
+            state <= next;
+            if(state == DATA)
+                count <= count + 1'd1;
+            else 
                 count <= 4'd0;
-            end
         end
     end
-
-	assign done = (state == DONE);
+    
+    assign done = (state == DONE);
 
 endmodule

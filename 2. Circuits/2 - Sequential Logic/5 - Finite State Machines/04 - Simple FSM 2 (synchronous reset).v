@@ -5,7 +5,7 @@ module top_module(
     input k,
     output out); //  
 
-    parameter OFF = 1'b0, ON = 1'b1; 
+    localparam OFF = 1'b0, ON = 1'b1; 
     reg state, next_state;
 
     always @(*) begin

@@ -10,7 +10,7 @@ module top_module(
     output aaah,
     output digging ); 
     
-    parameter [2:0]	LEFT = 3'b000,
+    localparam [2:0] LEFT = 3'b000,
     				RIGHT = 3'b001,
     				FALL_LEFT = 3'b010,
     				FALL_RIGHT = 3'b011,

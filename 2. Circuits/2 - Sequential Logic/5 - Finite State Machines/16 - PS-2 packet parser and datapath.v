@@ -8,7 +8,7 @@ module top_module(
     reg [23:0] data;
     
     // FSM from fsm_ps2
-    parameter B1 = 2'd1, B2 = 2'd2, B3 = 2'd3, DONE = 2'd0;
+    localparam B1 = 2'd1, B2 = 2'd2, B3 = 2'd3, DONE = 2'd0;
     reg [1:0] state, next;
     
     always @(*) begin

@@ -40,10 +40,10 @@ module top_module(
         else begin
             state <= next;
             if(state == DATA) begin
-                count 	<= count + 1'd1;
-                data  	<= {in, data[7:1]};
+                count <= count + 1'd1;
+                data  <= {in, data[7:1]};
             end else begin
-                count 	<= 4'd0;
+                count <= 4'd0;
             end
         end
     end
@@ -55,6 +55,6 @@ module top_module(
   	parity odd_parity(.clk(clk), .reset(odd_reset), .in(in), .odd(odd)); 
     
     assign done = (state == DONE);
-    assign out_byte = (done) ? data : 8'd0;
+    assign out_byte = data;
 
 endmodule

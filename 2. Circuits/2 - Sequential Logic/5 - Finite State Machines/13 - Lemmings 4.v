@@ -10,7 +10,7 @@ module top_module(
     output aaah,
     output digging ); 
 	
-    parameter LEFT = 3'b000, RIGHT = 3'b001, FALL_LEFT = 3'b010, FALL_RIGHT = 3'b011,
+    localparam LEFT = 3'b000, RIGHT = 3'b001, FALL_LEFT = 3'b010, FALL_RIGHT = 3'b011,
     			DIG_LEFT = 3'b100, DIG_RIGHT = 3'b101, SPLATTER = 3'b110;
     reg [2:0] state, next;
     integer count;

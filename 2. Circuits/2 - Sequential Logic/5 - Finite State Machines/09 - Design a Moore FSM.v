@@ -7,7 +7,7 @@ module top_module (
     output fr1,
     output dfr
 ); 
-    parameter 	s3 		= 3'd5,		// water level above s3
+    localparam 	s3 		= 3'd5,		// water level above s3
     			s3_s2 	= 3'd4,		// water level above s2 - previous level s3
     			s2_s3 	= 3'd3,		// water level above s2 - previous level s2
     			s2_s1 	= 3'd2,		// water level above s1 - previous level s2

@@ -4,7 +4,7 @@ module top_module(
     input in,
     output out);//  
 
-    parameter A=1'b0, B=1'b1; 
+    localparam A=1'b0, B=1'b1; 
     reg state, next_state;
 
     always @(*) begin    // This is a combinational always block

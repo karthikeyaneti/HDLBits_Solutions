@@ -6,7 +6,7 @@ module top_module(
     output walk_left,
     output walk_right); //  
 
-    parameter LEFT = 1'b0, RIGHT = 1'b1;
+    localparam LEFT = 1'b0, RIGHT = 1'b1;
     reg state, next_state;
 
     always @(*) begin
