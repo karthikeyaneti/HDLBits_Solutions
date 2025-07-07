@@ -5,7 +5,7 @@
 
 💡 My solutions to the Verilog-based problem set on [HDLBits](https://hdlbits.01xz.net/wiki/Problem_sets) — **182 problems** covering **combinational**, **sequential**, and **FSM-based** digital design.
 
-<img src="media/stats.png" width="300"/>
+<img src="media/stats.png" width="400"/>
 
 ---
 
@@ -73,7 +73,7 @@ Special thanks to my friend **[andbhavyaa](https://github.com/andbhavyaa)** for 
 
 By combining **ChatGPT** to generate the structured folder layout and **skeldir** to create it instantly on my file system, I was able to set up all problem folders and files without any manual effort.
 
-⚡ The entire process was **hassle-free** and saved hours of repetitive work!
+⚡ The entire process was **hassle-free** and saved lots of repetitive work!
 
 > If you're working on projects that require bulk folder or file setup, I highly recommend checking it out.
 
