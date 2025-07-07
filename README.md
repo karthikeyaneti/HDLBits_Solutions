@@ -33,14 +33,14 @@ All problems encourage correct **synthesizable Verilog** practices.
       <table>
         <tr><td>Getting Started</td><td>✅ Done</td></tr>
         <tr><td>Verilog Language</td><td>✅ Done</td></tr>
-        <tr><td>Combinational Logic</td><td>✅ Done</td></tr>
-        <tr><td>Sequential Logic</td><td>✅ Done</td></tr>
-        <tr><td>Finite State Machines</td><td>✅ Done</td></tr>
-        <tr><td>Other Topics</td><td>✅ Done</td></tr>
+        <tr><td>Circuits</td><td>✅ Done</td></tr>
+        <tr><td>Verification - Reading Simulations</td><td>✅ Done</td></tr>
+        <tr><td>Verification - Writing Testbenches</td><td>✅ Done</td></tr>
+        <tr><td>CS450</td><td>✅ Done</td></tr>
       </table>
     </td>
     <td align="center" valign="center" width="45%">
-      <img src="media/completed_problems.gif" width="400"/>
+      <img src="media/completed_problems.gif" width="450"/>
     </td>
   </tr>
 </table>
