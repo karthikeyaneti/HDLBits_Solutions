@@ -40,7 +40,7 @@ All problems encourage correct **synthesizable Verilog** practices.
       </table>
     </td>
     <td align="center" valign="center" width="45%">
-      <img src="media/completed_problems.gif" width="450"/>
+      <img src="media/completed_problems.gif" width="400"/>
     </td>
   </tr>
 </table>
