@@ -4,12 +4,7 @@ module top_module(
     input sub,
     output [31:0] sum
 );
-    
-    wire [31:0] b1;
-    wire carry;
-    assign b1 = b ^ {32{sub}};
-    
-    add16(a[15:0], b1[15:0], sub, sum[15:0], carry);
-    add16(a[31:16], b1[31:16], carry, sum[31:16]);      
-
+    wire cout;
+    add16 instance1(a[15:0],b[15:0]^{16{sub}},sub,sum[15:0],cout);
+    add16 instance2(a[31:16],b[31:16]^{16{sub}},cout,sum[31:16]);
 endmodule
