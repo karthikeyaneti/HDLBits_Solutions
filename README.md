@@ -5,7 +5,7 @@
 
 💡 My solutions to the Verilog-based problem set on [HDLBits](https://hdlbits.01xz.net/wiki/Problem_sets) — **182 problems** covering **combinational**, **sequential**, and **FSM-based** digital design.
 
-<img src="media/image.png" width="300"/>
+<img src="media/stats.png" width="300"/>
 
 ---
 
